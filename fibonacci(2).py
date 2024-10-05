@@ -1,0 +1,140 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "053e3533",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "How many terms?60\n",
+      "Fibonacci Sequence :\n",
+      "0\n",
+      "1\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "5\n",
+      "8\n",
+      "13\n",
+      "21\n",
+      "34\n",
+      "55\n",
+      "89\n",
+      "144\n",
+      "233\n",
+      "377\n",
+      "610\n",
+      "987\n",
+      "1597\n",
+      "2584\n",
+      "4181\n",
+      "6765\n",
+      "10946\n",
+      "17711\n",
+      "28657\n",
+      "46368\n",
+      "75025\n",
+      "121393\n",
+      "196418\n",
+      "317811\n",
+      "514229\n",
+      "832040\n",
+      "1346269\n",
+      "2178309\n",
+      "3524578\n",
+      "5702887\n",
+      "9227465\n",
+      "14930352\n",
+      "24157817\n",
+      "39088169\n",
+      "63245986\n",
+      "102334155\n",
+      "165580141\n",
+      "267914296\n",
+      "433494437\n",
+      "701408733\n",
+      "1134903170\n",
+      "1836311903\n",
+      "2971215073\n",
+      "4807526976\n",
+      "7778742049\n",
+      "12586269025\n",
+      "20365011074\n",
+      "32951280099\n",
+      "53316291173\n",
+      "86267571272\n",
+      "139583862445\n",
+      "225851433717\n",
+      "365435296162\n",
+      "591286729879\n",
+      "956722026041\n"
+     ]
+    }
+   ],
+   "source": [
+    "nterm=int(input(\"How many terms?\"))\n",
+    "\n",
+    "n1,n2 =0,1\n",
+    "count=0\n",
+    "\n",
+    "if nterm<=0:\n",
+    "    print(\"Please enter positive integer\")\n",
+    "elif nterm==0:\n",
+    "        print(\"Fibonacci sequence upto\",nterm,\":\")\n",
+    "        print(n1) \n",
+    "else:\n",
+    "            print(\"Fibonacci Sequence :\")\n",
+    "            \n",
+    "            while count < nterm:\n",
+    "                print(n1)\n",
+    "                \n",
+    "                nth=n1+n2\n",
+    "                n1=n2\n",
+    "                n2=nth\n",
+    "                count+=1\n",
+    "            "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ef10b956",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b61f254e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
